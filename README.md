@@ -1,61 +1,324 @@
-# laravel-base-roomclass
-Base para programación avanzada proyecto con Laravel
+# Programación Avanzada (PHP)
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Carrera: Redes y Software  
+Docente: Martin Roman  
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 🎯 Objetivo del curso
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Desarrollar una aplicación web completa utilizando Laravel, aplicando arquitectura MVC, base de datos, formularios, autenticación y buenas prácticas.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ⚙️ Requisitos
 
-## Learning Laravel
+- PHP 8+
+- Composer
+- MySQL
+- Git
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Instalación
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Clonar repositorio:
 
-## Agentic Development
+git clone URL
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Entrar a la carpeta:
 
-```bash
-composer require laravel/boost --dev
+cd proyecto
 
-php artisan boost:install
-```
+Instalar dependencias:
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+composer install
 
-## Contributing
+Configurar entorno:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+cp .env.example .env
 
-## Code of Conduct
+Generar key:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+php artisan key:generate
 
-## Security Vulnerabilities
+Ejecutar servidor:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+php artisan serve
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📌 Forma de trabajo
+
+- Cada estudiante trabaja en su repositorio individual
+- Se evaluará el progreso mediante commits
+- Se debe trabajar clase a clase
+
+---
+
+## 📊 Evaluación
+
+- Funcionamiento del sistema
+- Uso de MVC
+- Base de datos
+- Seguridad
+- Commits (cantidad y calidad)
+
+---
+
+# 📚 PLAN DE TRABAJO POR CLASES
+
+---
+
+## 🧩 Clase 1 – Instalación y estructura
+
+### Objetivo
+Comprender qué es Laravel y su estructura.
+
+### Tareas
+
+- Instalar proyecto Laravel
+- Ejecutar el servidor
+- Explorar carpetas principales
+
+### Commit esperado
+"Clase 1 - instalación y primer proyecto funcionando"
+
+---
+
+## 🧩 Clase 2 – Rutas
+
+### Objetivo
+Comprender el manejo de rutas.
+
+### Tareas
+
+- Crear rutas:
+  - /inicio
+  - /saludo/{nombre}
+  - /suma/{a}/{b}
+
+### Commit esperado
+"Clase 2 - rutas básicas y parámetros"
+
+---
+
+## 🧩 Clase 3 – Controladores
+
+### Objetivo
+Separar lógica en controladores.
+
+### Tareas
+
+- Crear controlador EventoController
+- Crear rutas usando controlador
+- Crear páginas:
+  - /eventos
+  - /contacto
+
+### Commit esperado
+"Clase 3 - uso de controladores"
+
+---
+
+## 🧩 Clase 4 – Vistas (Blade)
+
+### Objetivo
+Mostrar contenido dinámico.
+
+### Tareas
+
+- Crear vistas:
+  - inicio.blade.php
+  - eventos.blade.php
+- Enviar datos desde controlador
+
+### Commit esperado
+"Clase 4 - vistas blade"
+
+---
+
+## 🧩 Clase 5 – CRUD básico
+
+### Objetivo
+Implementar CRUD sin base de datos.
+
+### Tareas
+
+- Crear ProductoController
+- Listar productos (array)
+- Crear formulario
+
+### Commit esperado
+"Clase 5 - CRUD básico sin BD"
+
+---
+
+## 🧩 Clase 6 – Base de datos
+
+### Objetivo
+Trabajar con persistencia.
+
+### Tareas
+
+- Crear migración productos
+- Ejecutar migrate
+- Conectar modelo
+
+### Commit esperado
+"Clase 6 - base de datos y migraciones"
+
+---
+
+## 🧩 Clase 7 – CRUD completo
+
+### Objetivo
+CRUD con base de datos.
+
+### Tareas
+
+- Crear productos
+- Editar productos
+- Eliminar productos
+
+### Commit esperado
+"Clase 7 - CRUD completo con BD"
+
+---
+
+## 🧩 Clase 8 – Formularios y validación
+
+### Objetivo
+Validar datos del usuario.
+
+### Tareas
+
+- Validar campos:
+  - nombre obligatorio
+  - precio numérico
+
+### Commit esperado
+"Clase 8 - validaciones"
+
+---
+
+## 🧩 Clase 9 – Relaciones
+
+### Objetivo
+Relacionar modelos.
+
+### Tareas
+
+- Crear relación Usuario → Productos
+
+### Commit esperado
+"Clase 9 - relaciones ORM"
+
+---
+
+## 🧩 Clase 10 – Autenticación
+
+### Objetivo
+Sistema de login.
+
+### Tareas
+
+- Instalar auth (Breeze)
+- Proteger rutas
+
+### Commit esperado
+"Clase 10 - autenticación"
+
+---
+
+## 🧩 Clase 11 – Seguridad
+
+### Objetivo
+Buenas prácticas.
+
+### Tareas
+
+- Uso de CSRF
+- Protección de formularios
+
+### Commit esperado
+"Clase 11 - seguridad"
+
+---
+
+## 🧩 Clase 12 – API
+
+### Objetivo
+Crear endpoints.
+
+### Tareas
+
+- Crear ruta API
+- Devolver JSON
+
+### Commit esperado
+"Clase 12 - API REST"
+
+---
+
+## 🧩 Clase 13 – Git
+
+### Objetivo
+Trabajo colaborativo.
+
+### Tareas
+
+- Uso de ramas
+- Pull requests
+
+### Commit esperado
+"Clase 13 - uso de Git"
+
+---
+
+## 🧩 Clase 14 – Deploy
+
+### Objetivo
+Publicar proyecto.
+
+### Tareas
+
+- Subir a servidor
+- Configurar entorno
+
+### Commit esperado
+"Clase 14 - deploy"
+
+---
+
+## 🧩 Clase 15 – Proyecto final
+
+### Objetivo
+Integrar todo.
+
+### Tareas
+
+- Aplicación completa funcionando
+
+### Commit esperado
+"Entrega final"
+
+---
+
+## ⚠️ Reglas importantes
+
+- No copiar código
+- Trabajar clase a clase
+- Hacer commits frecuentes
+- Probar antes de subir
+
+---
+
+## 💡 Recomendación
+
+Si algo no funciona:
+- Revisar errores
+- Consultar documentación
+- Preguntar en clase
+
+---
